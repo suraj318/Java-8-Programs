@@ -12,5 +12,16 @@ public class StringPool{
         System.out.println(s1==s3);
         System.out.println(s1.equalsIgnoreCase(s3));
 
+        Integer a=2;
+        int b= a;
+
+        Integer c= a;
+
+        System.out.println(a.getClass().getName());
+
+        Class<?> clss=int.class;
+        System.out.println(clss.getName());
+        
+
     }
 }
