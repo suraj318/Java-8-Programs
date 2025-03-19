@@ -1,5 +1,9 @@
 package JavaFunctionalProgram;
 
+/*
+ * This is Example of DIP (Dependency Inversion Principle) : SOLID
+ */
+
 interface Database{
     void connect();
 }
