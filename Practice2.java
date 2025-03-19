@@ -1,8 +1,5 @@
 package JavaFunctionalProgram;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class Practice2 {
     public static void main(String[] args) {

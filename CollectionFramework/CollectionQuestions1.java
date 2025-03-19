@@ -126,7 +126,7 @@ public class CollectionQuestions1 {
                 count++;
             }
         }
-    }
+    }   
 
 
     public static void main(String[] args) {
