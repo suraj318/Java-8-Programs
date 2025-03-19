@@ -7,11 +7,13 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Stream;
 
 class ListCollection{
     public static List<Integer> num=Arrays.asList(1,2,3,4,5,6,8,9,5,3,2,1,23,54,6);
@@ -127,7 +129,20 @@ public class CollectionQuestions1 {
             }
         }
     }   
-
+    public static void FirstNonRepeatingCharacter(String s){
+            Map<Character,Integer> map=new LinkedHashMap<>();
+            for(char c: s.toLowerCase().toCharArray()){
+                map.put(c,map.getOrDefault(c, 0)+1);
+            }
+            System.out.println(map);
+            
+            for (Map.Entry<Character,Integer> m : map.entrySet()) {
+                if(m.getValue()==1){
+                    System.out.println(m.getKey());
+                    break;
+                }
+            }
+    }
 
     public static void main(String[] args) {
     //reverse();
@@ -140,6 +155,7 @@ public class CollectionQuestions1 {
     //LinkedHashSetExample();
     //removeNullValues();
     //unModifiedList();
-    findDuplicate();
+    //findDuplicate();
+    FirstNonRepeatingCharacter("Ssurajj");
 }
 }
